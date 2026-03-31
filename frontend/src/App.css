@@ -1,0 +1,180 @@
+/* Portfolio Styling */
+body {
+    background-color: #000000;
+    overflow-x: hidden;
+}
+
+.portfolio-container {
+    position: relative;
+    width: 100%;
+}
+
+/* Handwritten Typography */
+.handwriting-style {
+    font-family: 'Caveat', 'Comic Sans MS', cursive, sans-serif;
+    font-weight: 400;
+}
+
+.handwriting-display {
+    font-family: 'Pacifico', 'Brush Script MT', cursive, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+}
+
+/* Scroll Animations */
+.scroll-animate {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.scroll-animate.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Float Animation */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px) scale(1);
+    }
+    50% {
+        transform: translateY(-20px) scale(1.05);
+    }
+}
+
+@keyframes float-delayed {
+    0%, 100% {
+        transform: translateY(0px) scale(1);
+    }
+    50% {
+        transform: translateY(20px) scale(1.08);
+    }
+}
+
+.animate-float {
+    animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+    animation: float-delayed 8s ease-in-out infinite;
+}
+
+/* Skill Bar Animation */
+.skill-bar {
+    animation: expandBar 1.5s ease-out forwards;
+}
+
+@keyframes expandBar {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes shimmer {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.animate-shimmer {
+    animation: shimmer 2s infinite;
+}
+
+/* Service Card Hover Effects */
+.service-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(139, 21, 56, 0.1), transparent);
+    transition: left 0.5s;
+}
+
+.service-card:hover::before {
+    left: 100%;
+}
+
+/* Gallery Item Effects */
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-item::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 2px solid #8B1538;
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+}
+
+.gallery-item:hover::after {
+    opacity: 1;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #8B1538;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #A91B3D;
+}
+
+/* Selection Color */
+::selection {
+    background-color: #8B1538;
+    color: #F5F5F0;
+}
+
+/* Cursor Effects */
+a, button {
+    cursor: pointer;
+    position: relative;
+}
+
+/* Loading Animation for Images */
+img {
+    transition: opacity 0.3s ease-in-out;
+}
+
+img:not([src]) {
+    opacity: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .handwriting-display {
+        letter-spacing: 0;
+    }
+}
