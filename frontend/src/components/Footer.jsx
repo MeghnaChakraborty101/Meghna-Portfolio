@@ -17,7 +17,7 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <h3 className="text-3xl font-bold text-wine-red handwriting-display mb-3">
-              Alex Rivers
+              Meghna Chakraborty
             </h3>
             <p className="text-cream-light text-sm leading-relaxed">
               Graphic Designer & Video Editor crafting visual stories that resonate.
