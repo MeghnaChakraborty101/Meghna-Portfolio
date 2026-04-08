@@ -28,18 +28,21 @@ const HeroSection = () => {
 
         {/* Large name display */}
         <div className={`mb-8 transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>
-          <h1 className="text-7xl md:text-9xl lg:text-[12rem] font-bold text-wine-red handwriting-display leading-none mb-4">
-            Alex
+          <h1 className="text-7xl md:text-9xl lg:text-[12rem] font-bold text-wine-red handwriting-display leading-none mb-4 ">
+            Meghna
           </h1>
-          <h1 className="text-7xl md:text-9xl lg:text-[12rem] font-bold text-wine-light handwriting-display leading-none">
-            Rivers
-          </h1>
+          {/* <h1 className="text-7xl md:text-9xl lg:text-[12rem] font-bold text-wine-light handwriting-display leading-none">
+            Chakraborty
+          </h1> */}
+          <br />
+          <br />
+          <br />
         </div>
 
         {/* Subtitle */}
         <div className={`transition-all duration-1000 delay-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <p className="text-cream text-base md:text-lg tracking-wider uppercase mb-4">Graphic Designer / Video Editor</p>
-          <p className="text-cream-light text-sm md:text-base max-w-2xl mx-auto handwriting-style">By Alex Rivers</p>
+          <p className="text-cream-light text-sm md:text-base max-w-2xl mx-auto handwriting-style">By Meghna Chakraborty</p>
         </div>
 
         {/* Scroll indicator */}
