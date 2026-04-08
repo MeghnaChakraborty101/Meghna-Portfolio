@@ -24,64 +24,78 @@ body {
 /* Scroll Animations */
 .scroll-animate {
     opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    transform: translate3d(0, 30px, 0);
+    transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: transform, opacity;
+    backface-visibility: hidden;
 }
 
 .scroll-animate.animate-in {
     opacity: 1;
-    transform: translateY(0);
+    transform: translate3d(0, 0, 0);
 }
 
-/* Float Animation */
+/* Float Animation - GPU accelerated (no scale to avoid blur repaints) */
 @keyframes float {
     0%, 100% {
-        transform: translateY(0px) scale(1);
+        transform: translate3d(0, 0px, 0);
     }
     50% {
-        transform: translateY(-20px) scale(1.05);
+        transform: translate3d(0, -20px, 0);
     }
 }
 
 @keyframes float-delayed {
     0%, 100% {
-        transform: translateY(0px) scale(1);
+        transform: translate3d(0, 0px, 0);
     }
     50% {
-        transform: translateY(20px) scale(1.08);
+        transform: translate3d(0, 20px, 0);
     }
 }
 
 .animate-float {
-    animation: float 6s ease-in-out infinite;
+    animation: float 7s ease-in-out infinite;
+    will-change: transform;
+    backface-visibility: hidden;
 }
 
 .animate-float-delayed {
-    animation: float-delayed 8s ease-in-out infinite;
+    animation: float-delayed 9s ease-in-out infinite;
+    will-change: transform;
+    backface-visibility: hidden;
 }
 
-/* Skill Bar Animation */
+/* Skill Bar Animation - uses scaleX (GPU composited, not layout) */
 .skill-bar {
-    animation: expandBar 1.5s ease-out forwards;
+    transform-origin: left center;
+    animation: expandBar 1.4s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    will-change: transform;
+    backface-visibility: hidden;
 }
 
 @keyframes expandBar {
     from {
-        width: 0;
+        transform: scaleX(0);
+    }
+    to {
+        transform: scaleX(1);
     }
 }
 
 @keyframes shimmer {
     0% {
-        transform: translateX(-100%);
+        transform: translate3d(-100%, 0, 0);
     }
     100% {
-        transform: translateX(100%);
+        transform: translate3d(100%, 0, 0);
     }
 }
 
 .animate-shimmer {
     animation: shimmer 2s infinite;
+    will-change: transform;
+    backface-visibility: hidden;
 }
 
 /* Service Card Hover Effects */
@@ -131,6 +145,21 @@ body {
 /* Smooth Scrolling */
 html {
     scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* GPU layer promotion for heavy background blobs */
+.bg-blob {
+    will-change: transform;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+}
+
+/* Promote static blur decorators to their own compositor layer */
+.blur-3xl,
+.blur-2xl {
+    transform: translateZ(0);
+    backface-visibility: hidden;
 }
 
 /* Custom Scrollbar */

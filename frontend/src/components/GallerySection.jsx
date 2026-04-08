@@ -75,7 +75,9 @@ const GallerySection = () => {
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                loading="lazy"
+                decoding="async"
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 will-change-transform"
               />
               
               {/* Overlay */}

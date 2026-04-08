@@ -46,10 +46,9 @@ const SkillsSection = () => {
                 {/* Progress bar */}
                 <div className="relative h-3 bg-wine-dark bg-opacity-20 rounded-full overflow-hidden">
                   <div 
-                    className="absolute top-0 left-0 h-full bg-gradient-to-r from-wine-dark to-wine-red rounded-full transition-all duration-1000 ease-out skill-bar"
+                    className="absolute top-0 left-0 h-full w-full bg-gradient-to-r from-wine-dark to-wine-red rounded-full skill-bar"
                     style={{ width: `${skill.level}%` }}
                   >
-                    <div className="absolute inset-0 bg-white opacity-20 animate-shimmer"></div>
                   </div>
                 </div>
               </div>

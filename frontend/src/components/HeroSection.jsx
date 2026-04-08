@@ -15,8 +15,8 @@ const HeroSection = () => {
       
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-wine-red opacity-10 rounded-full blur-3xl animate-float"></div>
-        <div className="absolute bottom-20 right-20 w-96 h-96 bg-wine-dark opacity-15 rounded-full blur-3xl animate-float-delayed"></div>
+        <div className="absolute top-20 left-10 w-72 h-72 bg-wine-red opacity-10 rounded-full blur-2xl animate-float bg-blob"></div>
+        <div className="absolute bottom-20 right-20 w-96 h-96 bg-wine-dark opacity-10 rounded-full blur-2xl animate-float-delayed bg-blob"></div>
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 py-20 text-center">

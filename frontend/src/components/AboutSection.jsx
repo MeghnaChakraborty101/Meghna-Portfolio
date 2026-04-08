@@ -22,7 +22,9 @@ const AboutSection = () => {
                 <img 
                   src="https://images.unsplash.com/photo-1737575655055-e3967cbefd03" 
                   alt="Early days"
-                  className="w-32 h-32 rounded-lg object-cover border-4 border-wine-dark shadow-lg transform -rotate-3 hover:rotate-0 transition-transform duration-300"
+                  loading="lazy"
+                  decoding="async"
+                  className="w-32 h-32 rounded-lg object-cover border-4 border-wine-dark shadow-lg transform -rotate-3 hover:rotate-0 transition-transform duration-300 will-change-transform"
                 />
                 <div className="flex-1">
                   <svg className="w-full h-24" viewBox="0 0 200 100">
@@ -32,7 +34,9 @@ const AboutSection = () => {
                 <img 
                   src="https://images.pexels.com/photos/906457/pexels-photo-906457.jpeg" 
                   alt="Present day"
-                  className="w-32 h-32 rounded-lg object-cover border-4 border-wine-red shadow-lg transform rotate-3 hover:rotate-0 transition-transform duration-300"
+                  loading="lazy"
+                  decoding="async"
+                  className="w-32 h-32 rounded-lg object-cover border-4 border-wine-red shadow-lg transform rotate-3 hover:rotate-0 transition-transform duration-300 will-change-transform"
                 />
               </div>
             </div>
@@ -55,22 +59,30 @@ const AboutSection = () => {
             <img 
               src="https://images.unsplash.com/photo-1764557175375-9e2bea91530e"
               alt="Video editing"
-              className="w-full h-64 object-cover rounded-lg hover:scale-105 transition-transform duration-300 shadow-xl"
+              loading="lazy"
+              decoding="async"
+              className="w-full h-64 object-cover rounded-lg hover:scale-105 transition-transform duration-300 shadow-xl will-change-transform"
             />
             <img 
               src="https://images.unsplash.com/photo-1757845524683-611470b2d7ce"
               alt="Behind the scenes"
-              className="w-full h-64 object-cover rounded-lg hover:scale-105 transition-transform duration-300 shadow-xl mt-8"
+              loading="lazy"
+              decoding="async"
+              className="w-full h-64 object-cover rounded-lg hover:scale-105 transition-transform duration-300 shadow-xl mt-8 will-change-transform"
             />
             <img 
               src="https://images.pexels.com/photos/11063289/pexels-photo-11063289.jpeg"
               alt="Studio setup"
-              className="w-full h-64 object-cover rounded-lg hover:scale-105 transition-transform duration-300 shadow-xl -mt-8"
+              loading="lazy"
+              decoding="async"
+              className="w-full h-64 object-cover rounded-lg hover:scale-105 transition-transform duration-300 shadow-xl -mt-8 will-change-transform"
             />
             <img 
               src="https://images.unsplash.com/photo-1693159682618-074078ed271e"
               alt="Workspace"
-              className="w-full h-64 object-cover rounded-lg hover:scale-105 transition-transform duration-300 shadow-xl"
+              loading="lazy"
+              decoding="async"
+              className="w-full h-64 object-cover rounded-lg hover:scale-105 transition-transform duration-300 shadow-xl will-change-transform"
             />
           </div>
         </div>

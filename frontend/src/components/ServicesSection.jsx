@@ -48,10 +48,10 @@ const ServicesSection = () => {
             return (
               <div 
                 key={index}
-                className="service-card group bg-gradient-to-br from-[#1a0a0f] to-black border border-wine-dark rounded-lg p-8 hover:border-wine-red transition-all duration-300 hover:shadow-2xl hover:shadow-wine-red/20 hover:-translate-y-2"
+                className="service-card group bg-gradient-to-br from-[#1a0a0f] to-black border border-wine-dark rounded-lg p-8 hover:border-wine-red transition-[border-color,transform,box-shadow] duration-300 hover:shadow-2xl hover:shadow-wine-red/20 hover:-translate-y-2"
               >
                 <div className="mb-6">
-                  <div className="w-16 h-16 bg-wine-dark bg-opacity-30 rounded-lg flex items-center justify-center group-hover:bg-wine-red group-hover:bg-opacity-20 transition-all duration-300">
+                  <div className="w-16 h-16 bg-wine-dark bg-opacity-30 rounded-lg flex items-center justify-center group-hover:bg-wine-red group-hover:bg-opacity-20 transition-colors duration-300">
                     <Icon className="w-8 h-8 text-wine-light group-hover:text-wine-red transition-colors duration-300" />
                   </div>
                 </div>

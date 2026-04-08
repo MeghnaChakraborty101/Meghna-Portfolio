@@ -32,7 +32,7 @@ const ClosingSection = () => {
 
           {/* CTA Button */}
           <div className="flex justify-center">
-            <button className="group relative bg-wine-red hover:bg-wine-dark text-cream font-medium px-8 py-4 rounded-lg transition-all duration-300 hover:shadow-2xl hover:shadow-wine-red/30 hover:scale-105 flex items-center gap-3">
+            <button className="group relative bg-wine-red hover:bg-wine-dark text-cream font-medium px-8 py-4 rounded-lg transition-[background-color,transform,box-shadow] duration-300 hover:shadow-2xl hover:shadow-wine-red/30 hover:scale-105 flex items-center gap-3 will-change-transform">
               <span className="text-lg">Let's Create Together</span>
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
             </button>
