@@ -9,11 +9,14 @@ const AboutSection = () => {
           <div className="space-y-6">
             <div className="space-y-4">
               <p className="text-cream-light text-base md:text-lg leading-relaxed handwriting-style">
-                <span className="text-wine-light text-xl">Hey, curious</span>, and <span className="text-wine-light text-xl">I see you</span>. 
-                <span className="block mt-2">Destined for the media world.</span>
+                <span className="text-wine-light text-xl">Hey, curious</span>, and <span className="text-wine-light text-xl">I see you</span>.
+                <span className="block mt-2">Where logic meets design.</span>
               </p>
               <p className="text-cream text-base md:text-lg leading-relaxed">
-                I'm just shy of 31, also had a whole <span className="text-wine-red font-medium">YouTube channel</span> for the vibes, with <span className="text-wine-red font-medium">100k followers</span> where we shared creative stories.
+                I'm <span className="text-wine-red font-medium">Meghna Chakraborty</span>, a Software Engineer from West Bengal with a sharp eye for <span className="text-wine-red font-medium">UI/UX design</span> — building scalable, accessible digital experiences that people actually love to use.
+              </p>
+              <p className="text-cream text-base md:text-lg leading-relaxed">
+                Pursuing my <span className="text-wine-red font-medium">B.Tech in Computer Science</span> at Techno India University (2022–2026), I've freelanced for real clients — from sustainable building startups to consultancy firms — crafting frontend platforms that are as beautiful as they are functional.
               </p>
             </div>
 
@@ -43,13 +46,13 @@ const AboutSection = () => {
 
             <div className="bg-wine-dark bg-opacity-20 border border-wine-dark rounded-lg p-6 space-y-3">
               <p className="text-cream-light text-sm md:text-base leading-relaxed">
-                After realizing her videos garnered more audience with a little
+                Fluent in <span className="text-wine-light font-medium">Python, C, HTML, CSS, Tailwind</span> and comfortable with <span className="text-wine-light font-medium">Figma, SQL, Power BI</span> and more —
               </p>
               <p className="text-wine-light text-lg md:text-xl font-medium">
-                aesthetic flair, she proudly hit 600 followers and
+                data visualization, web design, frontend dev —
               </p>
               <p className="text-cream text-base md:text-lg">
-                That's when it clicked: <span className="text-wine-red font-bold">people are suckers for pretty visuals.</span>
+                That's the philosophy: <span className="text-wine-red font-bold">code that works, design that feels.</span>
               </p>
             </div>
           </div>

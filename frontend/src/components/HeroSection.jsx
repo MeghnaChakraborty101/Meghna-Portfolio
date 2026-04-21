@@ -41,7 +41,7 @@ const HeroSection = () => {
 
         {/* Subtitle */}
         <div className={`transition-all duration-1000 delay-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <p className="text-cream text-base md:text-lg tracking-wider uppercase mb-4">Graphic Designer / Video Editor</p>
+          <p className="text-cream text-base md:text-lg tracking-wider uppercase mb-4">Webdevelopment and Webdesigns</p>
           <p className="text-cream-light text-sm md:text-base max-w-2xl mx-auto handwriting-style">By Meghna Chakraborty</p>
         </div>
 
