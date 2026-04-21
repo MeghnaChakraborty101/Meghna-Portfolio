@@ -1,25 +1,25 @@
 import React from 'react';
-import { Film, Palette, Wand2, Sparkles } from 'lucide-react';
+import { Code2, Palette, BarChart2, Sparkles } from 'lucide-react';
 
 const ServicesSection = () => {
   const services = [
     {
-      icon: Film,
-      title: 'Video Editing',
-      description: 'Crafting compelling stories through seamless cuts and dynamic transitions',
-      skills: ['Color Grading', 'Motion Graphics', 'Sound Design']
+      icon: Code2,
+      title: 'Frontend Development',
+      description: 'Building scalable, responsive web applications with clean code and seamless user experiences',
+      skills: ['HTML / CSS / Tailwind', 'React.js', 'Bootstrap']
     },
     {
       icon: Palette,
-      title: 'Graphic Design',
-      description: 'Creating visual identities that capture attention and communicate clearly',
-      skills: ['Brand Identity', 'Print Design', 'Digital Assets']
+      title: 'UI/UX Design',
+      description: 'Designing intuitive, accessible interfaces that balance aesthetics with functionality',
+      skills: ['Figma', 'Web Design', 'Wireframing']
     },
     {
-      icon: Wand2,
-      title: 'Creative Direction',
-      description: 'Bringing concepts to life with strategic vision and artistic execution',
-      skills: ['Art Direction', 'Storyboarding', 'Concept Development']
+      icon: BarChart2,
+      title: 'Data & Analytics',
+      description: 'Transforming raw data into meaningful insights through visualization and storytelling',
+      skills: ['Power BI', 'Tableau', 'Python (Pandas, Matplotlib)']
     }
   ];
 
@@ -37,7 +37,7 @@ const ServicesSection = () => {
             <Sparkles className="w-6 h-6 text-wine-light" />
           </div>
           <p className="text-cream-light text-lg max-w-2xl mx-auto handwriting-style">
-            I love content creating yay - I do video editing, storytelling, and everything that goes with it.
+            Software Engineer · UI/UX Designer · Data Enthusiast — building things that look good and work even better.
           </p>
         </div>
 
@@ -81,7 +81,7 @@ const ServicesSection = () => {
         <div className="mt-16 text-center">
           <div className="inline-block bg-wine-dark bg-opacity-20 border border-wine-dark rounded-full px-8 py-4">
             <p className="text-cream-light text-base handwriting-style">
-              and yes, for aesthetics <span className="text-wine-red">✨</span>
+              open to freelance & collaborations <span className="text-wine-red">✨</span>
             </p>
           </div>
         </div>

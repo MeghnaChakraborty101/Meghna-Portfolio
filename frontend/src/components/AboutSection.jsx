@@ -23,8 +23,8 @@ const AboutSection = () => {
             <div className="relative my-8">
               <div className="flex items-center gap-8">
                 <img 
-                  src="https://images.unsplash.com/photo-1737575655055-e3967cbefd03" 
-                  alt="Early days"
+                  src="/meghna.png" 
+                  alt="Meghna Chakraborty"
                   loading="lazy"
                   decoding="async"
                   className="w-32 h-32 rounded-lg object-cover border-4 border-wine-dark shadow-lg transform -rotate-3 hover:rotate-0 transition-transform duration-300 will-change-transform"
@@ -60,29 +60,29 @@ const AboutSection = () => {
           {/* Right side - Images */}
           <div className="grid grid-cols-2 gap-4">
             <img 
-              src="https://images.unsplash.com/photo-1764557175375-9e2bea91530e"
-              alt="Video editing"
+              src="https://images.unsplash.com/photo-1558655146-d09347e92766?w=800&q=80"
+              alt="UI design"
               loading="lazy"
               decoding="async"
               className="w-full h-64 object-cover rounded-lg hover:scale-105 transition-transform duration-300 shadow-xl will-change-transform"
             />
             <img 
-              src="https://images.unsplash.com/photo-1757845524683-611470b2d7ce"
-              alt="Behind the scenes"
+              src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&q=80"
+              alt="Design system"
               loading="lazy"
               decoding="async"
               className="w-full h-64 object-cover rounded-lg hover:scale-105 transition-transform duration-300 shadow-xl mt-8 will-change-transform"
             />
             <img 
-              src="https://images.pexels.com/photos/11063289/pexels-photo-11063289.jpeg"
-              alt="Studio setup"
+              src="https://images.unsplash.com/photo-1536148935331-408321065b18?w=800&q=80"
+              alt="Web design mockup"
               loading="lazy"
               decoding="async"
               className="w-full h-64 object-cover rounded-lg hover:scale-105 transition-transform duration-300 shadow-xl -mt-8 will-change-transform"
             />
             <img 
-              src="https://images.unsplash.com/photo-1693159682618-074078ed271e"
-              alt="Workspace"
+              src="https://images.unsplash.com/photo-1545235617-9465d2a55698?w=800&q=80"
+              alt="Creative design"
               loading="lazy"
               decoding="async"
               className="w-full h-64 object-cover rounded-lg hover:scale-105 transition-transform duration-300 shadow-xl will-change-transform"
