@@ -3,12 +3,12 @@ import { Monitor, Layers, Sparkles, Palette, Film, Code } from 'lucide-react';
 
 const SkillsSection = () => {
   const skills = [
-    { icon: Monitor, name: 'Premiere Pro', level: 95 },
-    { icon: Palette, name: 'After Effects', level: 90 },
-    { icon: Film, name: 'Final Cut Pro', level: 85 },
-    { icon: Layers, name: 'Photoshop', level: 92 },
-    { icon: Code, name: 'Illustrator', level: 88 },
-    { icon: Sparkles, name: 'DaVinci Resolve', level: 80 }
+    { icon: Monitor, name: 'Wordpress' },
+    { icon: Palette, name: 'Frontend Development', },
+    { icon: Film, name: 'Backend Development', },
+    { icon: Layers, name: 'Figma', },
+    { icon: Code, name: 'Power Bi', },
+    { icon: Sparkles, name: 'SQL, Excell', }
   ];
 
   return (
