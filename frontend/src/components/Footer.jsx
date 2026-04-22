@@ -75,9 +75,9 @@ const Footer = () => {
         {/* Bottom bar */}
         <div className="pt-8 border-t border-wine-dark">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-cream-light text-sm">
-              © 2025 Alex Rivers. All rights reserved.
-            </p>
+            {/* <p className="text-cream-light text-sm">
+              . All rights re© 2025 Alex Riversserved.
+            </p> */}
             <p className="text-cream-light text-sm flex items-center gap-2">
               Made with <Heart className="w-4 h-4 text-wine-red fill-wine-red" /> and creativity
             </p>
